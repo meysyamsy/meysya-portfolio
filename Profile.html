@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meysya Mutiara Syamila | Profile</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #E6D5B8;
+      --accent: #D4A373;
+      --background: #FAF7F0;
+      --text: #3B2F2F;
+	  --border-soft: #e8dcc9;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: var(--primary);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 0.8rem 3rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+	  
+.navbar table a {
+  padding-bottom: 4px;
+  transition: 0.25s;
+}
+
+.navbar table a:hover {
+  border-bottom: 2px solid black;
+}
+
+.navbar table td:nth-child(2) a {
+  border-bottom: 2px solid black;
+}
+
+    .profile-section {
+      min-height: 100vh;
+      padding: 120px 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      text-align: center;
+    }
+
+    .profile-section img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+      margin-bottom: 25px;
+    }
+
+    .profile-section h1 {
+      font-size: 2.3rem;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .profile-section p {
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+	  .info-section {
+  width: 100%;
+  max-width: 950px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 35px;
+  text-align: left;
+}
+
+.info-section h2 {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.info-grid p {
+  margin: 6px 0;
+  font-size: 1.05rem;
+}
+
+	 .education-section, .experience-section {
+  width: 100%;
+  max-width: 950px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 35px;
+  text-align: left;
+}
+
+.education-section h2,
+.experience-section h2 {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.education-section ul,
+.experience-section ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.education-section li,
+.experience-section li {
+  margin-bottom: 13px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+ 
+  .hobby-section {
+      width: 100%;
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .hobby-section h2 {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 35px;
+    }
+
+    .hobby-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+    }
+
+    .media-box {
+  width: 100%;
+  max-width: 290px;
+  height: 515px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 3px solid var(--border-soft);
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: .35s ease;
+}
+
+.media-box img,
+.media-box iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #391905;
+  border-radius: 15px;
+}
+
+    .media-box:hover {
+      transform: scale(1.06);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+      border-color: var(--accent);
+    }
+
+    .hobby-item h4 {
+      margin-top: 15px;
+      font-weight: 600;
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 900px) {
+      .hobby-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hobby-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" style="
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  ">
+	  
+    <div class="navbar-logo" style="display: flex; align-items: center;">
+      <img src="logooo.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
+      <span style="color: black; font-weight: 600; font-size: 18px;">Meysya Mutiara Syamila</span>
+    </div>
+
+    <table width="275" style="border-spacing: 30px 0;">
+      <tr>
+        <td><a href="index.html" target="_blank" style="color: black; text-decoration: none; font-weight: 500;">Home</a></td>
+        <td><a href="#" style="color: black; text-decoration: none; font-weight: 500;">Profile</a></td>
+        <td><a href="Portofolio.html" target="_blank" style="color: black; text-decoration: none; font-weight: 500;">Portfolio</a></td>
+        <td><a href="Contact Us.html" target="_blank" style="color: black; text-decoration: none; font-weight: 500;">Contact Us</a></td>
+      </tr>
+    </table>
+  </nav>
+
+  <section class="profile-section">
+    <img src="profile mey.jpg" alt="Foto Meysya">
+    <h1>Meysya Mutiara Syamila</h1>
+    <p>
+      Saya adalah seorang mahasiswa yang memiliki ketertarikan pada dunia digital, bisnis, dan teknologi.
+Saya menyukai proses belajar, eksplorasi, dan pengembangan diri melalui berbagai proyek kreatif.
+Olahraga juga menjadi bagian dari rutinitas saya — bukan hanya untuk menjaga kesehatan, tetapi juga untuk melatih disiplin dan keseimbangan hidup.
+    </p>
+
+	  <div class="info-section">
+  <h2>About Me</h2>
+  <div class="info-grid">
+    <p><strong>Full Name:</strong> Meysya Mutiara Syamila</p>
+    <p><strong>Date of Birth:</strong> 23 Mei 2007</p>
+    <p><strong>University:</strong> STMIK LIKMI</p>
+    <p><strong>Major:</strong> Digital Business Information System</p>
+    <p><strong>Email:</strong> meysyamsy@gmail.com</p>
+    <p><strong>Location:</strong> Bandung, Jawa Barat, Indonesia</p>
+  </div>
+</div>
+
+	  <div class="education-section">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>STMIK LIKMI</strong> — Digital Business Information System</li>
+    <li><strong>SMK Negeri 3 Bandung</strong> — Manajemen Perkantoran dan Layanan Bisnis</li>
+    <li><strong>SMPN 38 Bandung</strong></li>
+	<li><strong>SDN 148 Cibaduyut</strong></li>
+	<li><strong>TKAT Nurul Azhar</strong></li>
+  </ul>
+</div>
+
+<div class="experience-section">
+  <h2>Experience</h2>
+  <ul>
+    <li><strong>Praktek Kerja Lapangan di Pusat Sumber Daya Mineral, Batubara dan Panas Bumi</strong> — Mengelola aplikasi Naskah Dinas Elektronik untuk mengarsipkan surat masuk dan surat keluar</li>
+    <li><strong>Kader Kesehatan Remaja</strong> — Memberikan edukasi kesehatan kepada teman sebaya</li>
+    <li><strong>Project-Based Learning di Kantor Pos Indonesia</strong> — Melayani pelanggan di loket, mengantar surat dan paket ke Kantor Pos lain, mengelola laporan keuangan</li>
+	<li><strong>Project-Based Learning di mini market (Teaching Factory)</strong> — Melayani pelanggan, mengelola data stok barang dan keuangan</li>
+	<li><strong>Project-Based Learning di Hubungan Industri sekolah</strong> — Membantu kepala sekolah dalam pelaksanaan tugas hubungan industri/masyarakat</li>
+	<li><strong>Project-Based Learning di Ruang Jurusan Manajemen Perkantoran dan Layanan Bisnis</strong> — Membantu guru mengelola data siswa jurusan perkantoran dan logistik</li>
+	<li><strong>Project-Based Learning di Ruang Tata Usaha sekolah</strong> — Membantu pegawai TU mengelola pekerjaannya</li>
+	<li><strong>Project-Based Learning di Ruang Resepsionis sekolah</strong> — Menyambut dan membantu tamu yang membutuhkan informasi</li>
+	<li><strong>Project-Based Learning di Ruang Center of Excellent</strong> — Melayani siswa yang membutuhkan jasa printing</li>
+  </ul>
+</div>
+
+    <section class="hobby-section">
+      <h2>My Hobbies</h2>
+<div class="hobby-grid">
+
+        <div class="hobby-item">
+          <div class="media-box">
+            <img src="IMG_20251130_143055.jpg">
+          </div>
+          <h4>🏞 Mengunjungi Curug</h4>
+        </div>
+
+        <div class="hobby-item">
+          <div class="media-box">
+            <iframe src="https://drive.google.com/file/d/1lw6_BPDM4_q5o5uhQD0roXO21VvO7Tsx/preview"
+              allow="autoplay" allowfullscreen></iframe>
+          </div>
+          <h4>🚴‍ Sepedaan</h4>
+        </div>
+
+        <div class="hobby-item">
+          <div class="media-box">
+            <iframe src="https://drive.google.com/file/d/1an88KI5stDGQi8fYxPmait5yoYJqTrhz/preview"
+              allow="autoplay" allowfullscreen></iframe>
+          </div>
+          <h4>🏊‍ Berenang</h4>
+        </div>
+
+        <div class="hobby-item">
+          <div class="media-box">
+            <img src="IMG_20250907_100337.jpg">
+          </div>
+          <h4>🏛 Mengunjungi Tempat Bersejarah</h4>
+        </div>
+
+        <div class="hobby-item">
+          <div class="media-box">
+            <img src="quality_restoration_20251130144132818.jpg">
+          </div>
+          <h4>🏍 Riding</h4>
+        </div>
+
+        <div class="hobby-item">
+          <div class="media-box">
+            <img src="IMG_20240701_081740.jpg">
+          </div>
+          <h4>📸 Fotografi</h4>
+        </div>
+
+
+  </div>
+</section>
+	
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

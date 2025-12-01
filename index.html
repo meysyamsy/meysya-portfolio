@@ -1,0 +1,230 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meysya Mutiara Syamila | Portfolio</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #E6D5B8;
+      --accent: #D4A373;
+      --background: #FAF7F0;
+      --text: #3B2F2F;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: var(--primary);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 0.8rem 3rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      height: 45px;
+      margin-right: 10px;
+    }
+
+    .navbar-brand span {
+      font-weight: 600;
+      color: var(--text);
+      font-size: 1.1rem;
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+      margin-left: 25px;
+    }
+
+    .navbar-nav .nav-link {
+      color: var(--text) !important;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+.navbar a {
+  transition: 0.25s ease;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid black;
+  color: black !important;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid black;
+  color: black !important;
+}
+
+    .home-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      padding: 120px 10%;
+      background-color: var(--background);
+    }
+
+    .home-section img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+      margin-right: 50px;
+    }
+
+    .home-text {
+      max-width: 500px;
+    }
+
+    .home-text h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: var(--accent);
+    }
+
+    .home-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .btn-primary-custom {
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn-primary-custom:hover {
+      background-color: var(--text);
+      color: var(--primary);
+    }
+
+.social-section {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 60px 0;
+  border-top: none;
+}
+
+.social-section h3 {
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.social-icons i {
+  font-size: 32px;
+  color: var(--text);
+  margin: 0 18px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  transform: scale(1.15);
+}
+
+    @media (max-width: 768px) {
+      .home-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .home-section img {
+        margin: 0 0 25px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" style="
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+">
+
+  <div class="navbar-logo" style="display: flex; align-items: center;">
+    <img src="logooo.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
+    <span style="color: black; font-weight: 600; font-size: 18px;">Meysya Mutiara Syamila</span>
+  </div>
+
+  <table width="275" style="border-spacing: 30px 0;">
+    <tr>
+      <td><a href="#" class="active" style="color: black; text-decoration: none; font-weight: 500;">Home</a></td>
+      <td><a href="Profile.html" target="_blank" style="color: black; text-decoration: none; font-weight: 500;">Profile</a></td>
+      <td><a href="Portofolio.html" target="_blank" style="color: black; text-decoration: none; font-weight: 500;">Portfolio</a></td>
+      <td><a href="Contact Us.html" target="_blank" style="color: black; text-decoration: none; font-weight: 500;">Contact Us</a></td>
+    </tr>
+  </table>
+
+</nav>
+
+  <section class="home-section">
+    <img src="profile mey.jpg" alt="Meysya Mutiara Syamila">
+    <div class="home-text">
+      <h1>Hi, I'm Meysya Mutiara Syamila</h1>
+      <p>Welcome to my portfolio — a collection of my fitness and gym journey, combining discipline, wellness, and self-care as a long-term investment for body and mind.</p>
+      <a href="Portofolio.html" target="_blank">
+      <button class="btn-primary-custom">See My Portfolio</button>
+    </a>    </div>
+  </section>
+
+  <section class="social-section">
+    <h3>Connect With Me</h3>
+    <div class="social-icons">
+      <a href="https://api.whatsapp.com/send/?phone=6285695589634&text&type=phone_number&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/mey.c_a?igsh=ZThiamljNGphNXds" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:meysyamsy@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      <a href="https://www.tiktok.com/@mpcsya?_t=ZS-90pufo743Vt&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://open.spotify.com/user/zikgpt9712aqzxj70nlsuugis?si=8RQMMhzuS1C3DYdKEAalcw" target="_blank"><i class="fab fa-spotify"></i></a>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

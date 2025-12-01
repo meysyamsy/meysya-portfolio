@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Meysya Mutiara Syamila</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #E6D5B8;
+      --accent: #D4A373;
+      --background: #FAF7F0;
+      --text: #3B2F2F;
+    }
+
+    body {
+      background-color: var(--background);
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--text);
+    }
+
+    .navbar {
+      background-color: var(--primary) !important;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 0.8rem 3rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar table a {
+      padding-bottom: 4px;
+      transition: 0.25s;
+      color: black;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .navbar table a:hover {
+      border-bottom: 2px solid black;
+    }
+ 
+    .navbar table td:nth-child(4) a {
+      border-bottom: 2px solid black;
+    }
+
+    .contact-wrapper {
+      max-width: 1150px;
+      margin: 140px auto 70px;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 45px;
+      padding: 0 25px;
+    }
+
+    .contact-info h2 {
+      color: var(--accent);
+      font-weight: 650;
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+    .contact-info .highlight {
+      background: var(--primary);
+      padding: 10px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      font-weight: 500;
+      margin-top: 12px;
+    }
+
+    form {
+      background: white;
+      padding: 45px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    }
+    form input, form textarea {
+      margin-bottom: 18px;
+      border-radius: 10px;
+    }
+    textarea {
+      height: 140px;
+      resize: none;
+    }
+
+    .btn-submit {
+      background: var(--accent);
+      border: none;
+      padding: 12px 28px;
+      font-size: 16px;
+      border-radius: 30px;
+      font-weight: 500;
+      width: 100%;
+      color: white;
+      transition: .25s;
+      cursor: pointer;
+    }
+    .btn-submit:hover {
+      background: #b98058;
+    }
+
+    @media (max-width: 900px) {
+      .contact-wrapper { grid-template-columns: 1fr; }
+    }
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-logo" style="display: flex; align-items: center;">
+    <img src="logooo.jpg" alt="Logo" style="height: 40px; margin-right: 10px;">
+    <span style="color: black; font-weight: 600; font-size: 18px;">Meysya Mutiara Syamila</span>
+  </div>
+  <table width="275" style="border-spacing: 30px 0;">
+    <tr>
+      <td><a href="index.html" target="_blank">Home</a></td>
+      <td><a href="Profile.html" target="_blank">Profile</a></td>
+      <td><a href="Portofolio.html" target="_blank">Portfolio</a></td>
+      <td><a href="#">Contact Us</a></td>
+    </tr>
+  </table>
+</nav>
+
+<section class="contact-wrapper">
+
+  <div class="contact-info">
+    <h2>Get in Touch!</h2>
+    <p>
+      Butuh partner olahraga? Atau mau tanya-tanya seputar fitness dan gym journey? You're Welcome!<br>
+
+    </p>
+	  <p>Saya terbuka untuk <strong>collaboration, campaign, dan content project.</strong></p>
+
+    <p class="highlight">
+      Feel free to reach me anytime! <br>
+— I’ll reply as soon as I can ✨
+    </p>
+  </div>
+
+  <form>
+    <input type="text" class="form-control" placeholder="Nama" required>
+    <input type="text" class="form-control" placeholder="Nomor WhatsApp" required>
+    <input type="email" class="form-control" placeholder="Email" required>
+    <textarea class="form-control" placeholder="Pesan Anda..." required></textarea>
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
